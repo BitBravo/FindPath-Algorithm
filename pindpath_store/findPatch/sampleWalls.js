@@ -1,4 +1,4 @@
-var wall = {
+var walls = {
   Lager: {
     pos: [
       [98, 2],

@@ -1,6 +1,47 @@
 body { padding:0; margin:0; height:100%; width:100%; }
 div { font-family:arial; font-size:16px; font-weight:bold; text-align:center; }
-/* #gridCanvas {
-    width: 100%;
-    height: 600px;
-} */
+.logo {
+    position: absolute;
+    margin-left: 45px;
+    margin-top: 21px;
+}
+.logo-image {
+    width: 10px;
+}
+.logo-title {
+    font-size: 29px;
+    color: red;
+    font-weight: 900;
+    font-family: sans-serif;
+}
+
+.searchArea {
+    margin-bottom: 40px;
+}
+#searchTxt {
+    width: 50%;
+    border: 1px solid grey;
+    font-size: 20px;
+    outline: none;
+    padding: 7px 4px 7px 26px;
+}
+#searchBtn{
+    margin-left: -6px;
+    width: 10%;
+    background-color: #10c310;
+    outline: none;
+    font-size: 20px;
+    cursor: pointer;
+    border-left: none;
+    padding: 7px 0px 7px 0px;
+}
+#multicount{
+    width: 5%;
+    border: 1px solid grey;
+    font-size: 20px;
+    outline: none;
+    padding: 7px 4px 7px 26px;
+}
+canvas {
+    /* background-image: url("./img/bg.png"); */
+}

@@ -1,17 +1,55 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Path Finding</title>
+	<title>Store Help System</title>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+
 <body>
+	<div class="logo">
+		<span class="logo-icon">&nbsp;</span>
+		<span class="logo-title">SWERTZ</span>
+	</div>
 	<div>
-	  <h2>Help System</h2>
+		<h2>Store Help System</h2>
+		<div>
+			<div class="searchArea">
+				<input type="text" id="searchTxt" placeholder="Search.." name="search" list="shelvename">
+				<datalist id="shelvename">
+					<option value="Aktion">
+					<option value="Baustoffe">
+					<option value="Door">
+					<option value="Elektro">
+					<option value="Fahrrad">
+					<option value="Farben">
+					<option value="Garten">
+					<option value="Heimwerken">
+					<option value="Holz">
+					<option value="Infroflachen">
+					<option value="Kfz und Fahrrad">
+					<option value="Lager">
+  				<option value="Mein">
+					<option value="Sanitar">
+					<option value="Tool">
+				</datalist>
+				<button type="submit" id="searchBtn" onClick="startProcess()">
+					<i class="fa fa-search"></i>
+				</button>
+				<input type="number" id="multicount" placeholder="3" name="count">
+			</div>
+		</div>
+	</div>
 	</div>
 
-	<div><canvas id="gridCanvas"></canvas></div>
-	<script type="text/javascript" src="./js/walls.js"></script>
-	<script type="text/javascript" src="./js/find.js"></script>
+	<div>
+		<canvas id="gridCanvas"></canvas>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script type="text/javascript" src="./js/walls.js"></script>
+	<script type="text/javascript" src="./findPatch/findPatch.js"></script>
+	<script type="text/javascript" src="./js/script.js"></script>
 </body>
+
 </html>
